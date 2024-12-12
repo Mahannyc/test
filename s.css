@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sidebar{
+    width: 0px;
+    height: 10vh;
+    background-color: hsl(177, 53%, 34%);
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: width 0.5s ease-out;
+}
+
+.title{
+    text-align: center;
+    color: gray;
+    margin: 20px;
+}
+
+.ctrlbtn{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 25px;
+    margin: 20px;
+cursor: pointer;
+}
+.close::after{
+    content: '\002716 close';
+}
+.open::after{
+    content: '\002630 open';
+}
+ul{
+    list-style-type: none;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 24px;
+}
+ul li{
+    width: 100%;
+    padding: 10px 0;
+}
+ul li:hover{
+    background-color: grey;
+    color: white;
+}
+.show{
+    width: 250px;
+}
